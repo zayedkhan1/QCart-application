@@ -12,9 +12,60 @@ import girl_with_earphone from '../girl_with_earphone_image.png'
 import girl_with_headphone from '../girl_with_headphone_image.png'
 import boys_with_laptop from '../boy_with_laptop_image.png'
 
+import image1 from '../product_details_page_apple_earphone_image1.png'
+import image2 from '../product_details_page_apple_earphone_image2.png'
+import image3 from '../product_details_page_apple_earphone_image4.png'
+import image4 from '../product_details_page_apple_earphone_image5.png'
+
+
+
+
+export  const Singleproduct = 
+  [
+      {
+    id: 1,
+    name: "Apple AirPods Pro 2nd gen",
+    rating: 4.5,
+    description:
+      "Apple AirPods Pro (2nd Gen) with MagSafe Case (USB-C) provide excellent sound, active noise cancellation, and a comfortable fit. The USB-C case ensures quick charging, and they pair seamlessly with Apple devices for an effortless audio experience.",
+    price: 399.99,
+    oldPrice: 499.99,
+    brand: "Generic",
+    color: "Multi",
+    category: "Earphone",
+    images: [
+      image1,
+      image2,
+      image3,
+      image4,
+    ],
+        },
+      {
+    id: 2,
+    name: "Firebasee AirPods Pro 2nd gen",
+    rating: 4.5,
+    description:
+      "Apple AirPods Pro (2nd Gen) with MagSafe Case (USB-C) provide excellent sound, active noise cancellation, and a comfortable fit. The USB-C case ensures quick charging, and they pair seamlessly with Apple devices for an effortless audio experience.",
+    price: 399.99,
+    oldPrice: 499.99,
+    brand: "Generic",
+    color: "Multi",
+    category: "Earphone",
+    images: [
+      image1,
+      image2,
+      image3,
+      image4,
+    ],
+        },
+  ];
+  
+   
+  
+
 export const products = [
   {
-    id: 1,
+    id:1,
     name: "Apple Earphones",
     description: "Noise-cancellation, 40-hour battery",
     rating: 4.5,

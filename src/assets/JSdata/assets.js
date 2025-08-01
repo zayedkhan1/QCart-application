@@ -20,9 +20,9 @@ import heart_icon from "../heart_icon.svg";
 // import star_icon from "./star_icon.svg";
 // import redirect_icon from "./redirect_icon.svg";
 // import star_dull_icon from "./star_dull_icon.svg";
-// import header_headphone_image from "./header_headphone_image.png";
-// import header_playstation_image from "./header_playstation_image.png";
-// import header_macbook_image from "./header_macbook_image.png";
+import header_headphone_image from "../header_headphone_image.png";
+import header_playstation_image from "../header_playstation_image.png";
+import header_macbook_image from "../header_macbook_image.png";
 // import macbook_image from "./macbook_image.png";
 // import bose_headphone_image from "./bose_headphone_image.png";
 // import apple_earphone_image from "./apple_earphone_image.png";
@@ -51,6 +51,9 @@ export const assets = {
     heart_icon,
     jbl_soundbox_image,
     md_controller_image,
+    header_playstation_image,
+    header_headphone_image,
+    header_macbook_image,
 //   logo,
 //   search_icon,
 //   user_icon,
@@ -99,6 +102,27 @@ export const assets = {
 //   product_details_page_apple_earphone_image5,
 //   checkmark
 };
+
+export const slides = [
+  {
+    id: 1,
+    title: "Next-Level Gaming Starts Here – Discover PlayStation 5 Today!",
+    subtitle: "Hurry up only few lefts!",
+    img:header_playstation_image
+  },
+  {
+    id: 2,
+    title: "Experience Immersive Gaming with PS5 Accessories!",
+    subtitle: "Limited Stock Available!",
+    img:header_headphone_image
+  },
+  {
+    id: 3,
+    title: "Unlock True 4K Gaming – PlayStation 5 Deals!",
+    subtitle: "Grab yours before it's gone!",
+    img: header_macbook_image
+  },
+];
 
 export const productsDummyData = [
   {

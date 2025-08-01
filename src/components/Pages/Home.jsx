@@ -5,11 +5,19 @@ import { assets } from '../../assets/JSdata/assets';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 import FeaturedProducts from './FeaturedProducts';
 import Bonus from './Bonus';
+import Header from './Header';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const homeProduct=products.slice(0,10);
+     const navigate=useNavigate();
+  const handleProductt=(id)=>{
+    navigate(`/product/${id}`)
+  }
     return (
-        <div className=''>
+        <div >
+
+          <Header></Header>
 {/*  */}
 <section className="w-full px-4 py-10  max-w-7xl mx-auto">
     <h2 className="text-2xl font-semibold mb-10 text-gray-700">Popular pr<span className='border-b-3 border-orange-600'>oducts</span> </h2>
@@ -66,7 +74,7 @@ const Home = () => {
               <span className="text-lg font-semibold text-gray-700">
                 {prod.price}
               </span>
-              <button className="px-2 cursor-pointer text-xs py-1 border-1 border-gray-300 rounded-full text-gray-500  font-medium hover:bg-gray-100 transition">
+              <button onClick={()=>{handleProductt(prod.id)}} className="px-2 cursor-pointer text-xs py-1 border-1 border-gray-300 rounded-full text-gray-500  font-medium hover:bg-gray-100 transition">
                 Buy now
               </button>
             </div>

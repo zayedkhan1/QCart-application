@@ -3,8 +3,14 @@ import { products } from '../../assets/JSdata/productData';
 import { assets } from '../../assets/JSdata/assets';
 import PreFooter from '../sharedpage/PreFooter';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import { Link} from 'react-router-dom';
 
 const Shop = () => {
+
+  // const navigate=useNavigate();
+  // const handleProductt=(id)=>{
+  //   navigate(`/product/${id}`)
+  // }
   return (
     <div>
       <section className="w-full px-4 py-10 max-w-7xl mx-auto">
@@ -64,9 +70,9 @@ const Shop = () => {
                     <span className="text-lg font-semibold text-gray-700">
                       {prod.price}
                     </span>
-                    <button className="px-2 cursor-pointer text-xs py-1 border-1 border-gray-300 rounded-full text-gray-500 font-medium hover:bg-gray-100 transition">
+                    <Link to={`/product/${prod.id}`} className="px-2 cursor-pointer text-xs py-1 border-1 border-gray-300 rounded-full text-gray-500 font-medium hover:bg-gray-100 transition">
                       Buy now
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
