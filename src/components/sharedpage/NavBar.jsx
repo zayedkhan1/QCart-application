@@ -4,7 +4,7 @@ import { FiSearch } from "react-icons/fi";
 import { FaShoppingCart } from "react-icons/fa";
 import { RiAccountCircleLine } from "react-icons/ri";
 const NavBar = () => {
-     const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [query, setQuery] = useState("");
 
@@ -25,15 +25,15 @@ const NavBar = () => {
                 <div className='max-w-9xl mx-auto '>
                     <div className='flex items-center justify-around  h-16'>
                         <div>
-                            <a href='/'
+                            <a href='/home'
                                 className='flex-shrink-0 text-3xl font-bold text-gray-600'
                             >
-                                <span className=' text-orange-400'>Q-</span>Cart
+                                <span className=' text-orange-600'>Q-</span>Cart
 
                             </a>
                         </div>
                         <div className=' hidden md:flex md:items-center text-gray-700  space-x-6'>
-                            <a href="/"
+                            <a href="/home"
                                 className="relative   transition-transform duration-300 transform hover:scale-105
                             before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-amber-600
                             before:transition-all before:duration-500 hover:before:w-full"
@@ -53,9 +53,9 @@ const NavBar = () => {
                                 before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-0 before:bg-amber-600
                                 before:transition-all before:duration-500 hover:before:w-full"
                             >Contact</a>
-                            <a href="#"
-                              className='border-1 rounded-full p-1 border-gray-400 text-xs '
-                          
+                            <a href="/sideLayout"
+                                className='border-1 rounded-full p-1 border-gray-400 text-xs '
+
                             >Seller Dashboard</a>
                         </div>
                         <div className='hidden  md:flex md:items-center md:justify-around space-x-6'>
@@ -71,17 +71,17 @@ const NavBar = () => {
                                     />
                                     <button
                                         onClick={handleSearch}
-                                        className="p-2 text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+                                        className="p-2 text-gray-600 hover:text-orange-600 transition-colors cursor-pointer"
                                         aria-label="Search"
                                     >
                                         <FiSearch size={20} />
                                     </button>
                                 </div>
                             </div>
-                            
+
                             <div>
-                                <button className="btn relative flex items-center gap- overflow-hidden px-3 py-1 border-2 rounded-full border-amber-400 text-black font-semibold transition-all duration-300
-                                 hover:text-white hover:bg-amber-500 active:scale-95 active:shadow-inner cursor-pointer">Login</button>
+                                <button className="btn relative flex items-center gap- overflow-hidden px-3 py-1 border-2 rounded-full border-amber-600 text-black font-semibold transition-all duration-300
+                                 hover:text-white hover:bg-amber-600 active:scale-95 active:shadow-inner cursor-pointer">Login</button>
                             </div>
 
                         </div>
@@ -117,8 +117,8 @@ const NavBar = () => {
                     </div>
                 </div>
             </nav>
-          
-            
+
+
         </div>
     );
 };

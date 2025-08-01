@@ -3,8 +3,8 @@ import { FaArrowRight } from 'react-icons/fa';
 import { assets } from '../../assets/JSdata/assets';
 
 const Bonus = () => {
-    return (
-         <div className="font-sans bg-white flex flex-col items-center p-4 sm:p-8 min-h-screen text-gray-800">
+  return (
+    <div className="font-sans bg-white flex flex-col items-center p-4 sm:p-8 min-h-screen text-gray-800">
       {/* This is the main card section for the gaming promotion.
         It's designed to be a prominent hero section for the page.
       */}
@@ -13,13 +13,13 @@ const Bonus = () => {
           {/* Background shapes and images for visual appeal */}
           <div className="absolute inset-0 z-0 ">
             {/* The main gaming controller image on the right */}
-            <img 
-              src= {assets.md_controller_image}
+            <img
+              src={assets.md_controller_image}
               alt="Gaming Controller"
               className=" absolute right-0 top-1/2 -translate-y-1/2 w-1/3 max-w-xs opacity-60 lg:opacity-100 hidden sm:block"
             />
             {/* The speaker on the left side */}
-            <img 
+            <img
               src={assets.jbl_soundbox_image}
               alt="JBL Speaker"
               className="absolute left-0 top-1/2 -translate-y-1/2 w-1/3 max-w-xs opacity-60 lg:opacity-100 hidden sm:block"
@@ -56,7 +56,7 @@ const Bonus = () => {
         <p className="text-base text-gray-600 mb-8 max-w-md mx-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         </p>
-        
+
         {/* Input form for the newsletter subscription */}
         <form className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <input
@@ -74,7 +74,7 @@ const Bonus = () => {
         </form>
       </div>
     </div>
-    );
+  );
 };
 
 export default Bonus;

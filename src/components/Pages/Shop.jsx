@@ -3,16 +3,16 @@ import { products } from '../../assets/JSdata/productData';
 import { assets } from '../../assets/JSdata/assets';
 import PreFooter from '../sharedpage/PreFooter';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import NavBar from '../sharedpage/NavBar';
+import Footer from '../sharedpage/Footer';
 
 const Shop = () => {
 
-  // const navigate=useNavigate();
-  // const handleProductt=(id)=>{
-  //   navigate(`/product/${id}`)
-  // }
+  
   return (
     <div>
+      <NavBar></NavBar>
       <section className="w-full px-4 py-10 max-w-7xl mx-auto">
         <h2 className="text-2xl font-semibold mb-10 text-gray-700">
           All pr<span className="border-b-3 border-orange-600">oducts</span>
@@ -35,7 +35,7 @@ const Shop = () => {
                       className="h-[140px] transition-transform duration-300 hover:scale-110 object-contain"
                     />
                     <button className="absolute top-2 right-2 bg-white rounded-full p-2 shadow hover:bg-gray-100 text-pink-500">
-                      <img src={assets.heart_icon} alt="" />
+                      <img className='w-[15px]' src={assets.heart_icon} alt="" />
                     </button>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ const Shop = () => {
                         return <FaRegStar key={starIndex} size={15} className="text-orange-600" />;
                       }
                     })}
-                   
+
                   </div>
 
                   <div className="flex-1"></div>
@@ -82,6 +82,7 @@ const Shop = () => {
       </section>
 
       <PreFooter />
+      <Footer></Footer>
     </div>
   );
 };
