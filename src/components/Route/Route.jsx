@@ -5,30 +5,35 @@ import Product from "../sharedpage/Product";
 import SMain from "../SellerDashboard/SMain";
 import SHome from "../SellerDashboard/SHome";
 
-const router = createBrowserRouter(
-    [
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />, // ✅ Root route
+  },
+  {
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
+  },
+  {
+    path: "/product/:id",
+    element: <Product />,
+  },
+  {
+    path: "/sideLayout",
+    element: <SMain />,
+  },
+  {
+    path: "/sideHome",
+    element: <SHome />,
+  },
+  {
+    path: "*",
+    element: <h1>404 - Page Not Found</h1>, // ✅ Catch-all route
+  },
+]);
 
-        {
-            path: '/home',
-            element: <Home></Home>
-        },
-        {
-            path: '/shop',
-            element: <Shop></Shop>
-        },
-        {
-            path: '/product/:id',
-            element: <Product></Product>
-        },
-        {
-            path: '/sideLayout',
-            element: <SMain></SMain>,
-        },
-        {
-            path: '/sideHome',
-            element: <SHome></SHome>
-        },
-
-    ]
-)
 export default router;
